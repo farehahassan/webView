@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+     android:background="@color/white"
+     android:layout_height="match_parent"
+     android:orientation="vertical"
+     tools:context=".home_page">
+
+     <RelativeLayout
+          android:elevation="10sp"
+          android:layout_width="match_parent"
+          android:layout_height="60sp"
+
+        >
+          <ImageView
+
+               android:layout_centerVertical="true"
+               android:id="@+id/avatar"
+
+               android:layout_marginStart="20sp"
+
+               android:layout_width="40sp"
+               android:layout_height="40sp"
+               android:src="@drawable/ic_launcher_background"
+               android:background="@drawable/rounded_button"
+
+               android:contentDescription="@string/todo" />
+
+          <TextView
+               android:id="@+id/name"
+               android:layout_width="wrap_content"
+
+               android:layout_height="wrap_content"
+               android:layout_centerVertical="true"
+
+               android:layout_marginStart="10sp"
+               android:layout_toEndOf="@id/avatar"
+               android:textSize="16sp"
+               android:textStyle="bold"
+
+               android:text="Welcome back Fareha!" />
+          <ImageView
+               android:id="@+id/cart"
+               android:layout_alignParentEnd="true"
+               android:layout_centerVertical="true"
+               android:layout_marginEnd="20sp"
+               android:layout_width="20sp"
+               android:layout_height="20sp"
+               android:src="@drawable/baseline_add_shopping_cart_24"/>
+     </RelativeLayout>
+
+     <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="200sp"
+          android:background="@drawable/container"
+          android:orientation="vertical"
+          android:layout_gravity="center_vertical"
+          android:gravity="center_horizontal">
+          <TextView
+               android:layout_marginTop="20sp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/_20_discount"
+               android:textStyle="bold"
+               android:textSize="40sp"
+               android:textColor="#CF2052"
+               android:fontFamily="cursive"/>
+          <EditText
+               android:layout_width="match_parent"
+               android:layout_height="60sp"
+               android:layout_marginTop="20sp"
+               android:layout_marginHorizontal="20sp"
+               android:background="@drawable/round_back"
+               android:hint="@string/search_items_here"
+               android:paddingStart="20sp"
+               android:textStyle="bold"
+               android:textSize="14sp"
+               android:inputType="text"
+               android:autofillHints="todo"
+               tools:ignore="RtlSymmetry" />
+     </LinearLayout>
+
+   <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Portfolio Site"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30sp"
+        android:layout_marginVertical="20sp"/>
+     <WebView
+          android:id="@+id/portfolio"
+          android:layout_gravity="center_horizontal"
+          android:layout_width="300dp"
+          android:layout_height="500dp"/>
+
+</LinearLayout>
